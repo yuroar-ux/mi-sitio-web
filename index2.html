@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anderson Cutile Alvarez | Portafolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* --- Configuración para el scroll suave --- */
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px; /* Da espacio para que el menú no tape el contenido */
+      }
+
+      body {
+        background-color: #f4f7f6;
+        font-family: "Segoe UI", Roboto, sans-serif;
+        color: #333;
+      }
+
+      /* --- Estilos del Menú de Navegación (Adaptado a tu diseño) --- */
+      .nav-personalizada {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.90);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        padding: 15px 0;
+        margin-bottom: 30px;
+      }
+
+      .nav-personalizada a {
+        color: #5c432d;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        margin: 0 15px;
+        transition: all 0.3s ease;
+        letter-spacing: 1px;
+      }
+
+      .nav-personalizada a:hover {
+        color: #b58863;
+        transform: translateY(-2px);
+      }
+
+      /* --- Estilos para las tarjetas Bento --- */
+      .bento-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 25px;
+        height: 100%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bento-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .tech-badge {
+        background-color: #f0d9b5;
+        color: #5c432d;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0 4px 8px 0;
+        display: inline-block;
+      }
+
+      .video-stack iframe {
+        border-radius: 15px;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 15px;
+        border: none;
+      }
+
+      .hobby-img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .contact-link {
+        text-decoration: none;
+        color: #b58863;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+
+      .contact-link:hover {
+        color: #5c432d;
+      }
+
+      /* --- Estilos para el Carrusel de Imágenes --- */
+      .carrusel-container {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+      }
+
+      .carrusel-img {
+        width: 280px;      /* Ancho fijo para todas las imágenes */
+        height: 180px;     /* Alto fijo para todas las imágenes */
+        object-fit: cover; /* Evita que la imagen se estire o deforme */
+        border-radius: 10px;
+        margin: 0 10px;
+        transition: transform 0.3s;
+      }
+
+      .carrusel-img:hover {
+        transform: scale(1.05);
+        border: 2px solid #b58863;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Encabezado -->
+    <div class="container pt-5 pb-3 text-center text-md-start">
+      <h1 class="display-4 fw-bold">Anderson Cutile Alvarez</h1>
+      <p class="lead text-muted">
+        Estudiante de Ing. en Sistemas (7mo Semestre) | La Paz, Bolivia
+      </p>
+    </div>
+
+    <!-- Menú de Navegación con enlaces a los subtítulos -->
+    <nav class="nav-personalizada">
+      <div class="container d-flex justify-content-center flex-wrap">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#stack">Stack</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#metas">Metas</a>
+        <a href="#playlist">Playlist</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="container pb-5">
+
+      <div class="carrusel-container">
+        <marquee behavior="scroll" direction="left" scrollamount="20">
+          <img src="gato5.jfif" class="carrusel-img" />
+          <img src="gato6.jfif" class="carrusel-img" />
+          <img src="gato7.jpeg" class="carrusel-img" />
+          <img src="gato8.jpg" class="carrusel-img" />
+          <img src="gato9.jfif" class="carrusel-img" />
+          <img src="gato10.jpg" class="carrusel-img" />
+        </marquee>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="row g-4">
+            
+            <div class="col-12" id="sobre-mi">
+              <div class="bento-card">
+                <h3 class="h5 mb-3">🧘‍♂️ Sobre mí</h3>
+                <p class="mb-0 text-muted">
+                  Soy de llojeta tengo 21 años, me gusta mucho la tecnologia y
+                  los gatos, mi mision es contribuir al desarrollo tecnológico
+                  paceño mediante la creación de software eficiente para ser un
+                  profesional completo en el desarrollo web.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6" id="stack">
+              <div class="bento-card">
+                <h3 class="h5 mb-3">⚙️ Stack Tecnológico</h3>
+                <div>
+                  <span class="tech-badge">Java / Spring Boot</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">MySQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" id="proyectos">
+              <div class="bento-card">
+                <h3 class="h5 mb-3">🚀 Proyectos</h3>
+                <ul class="small text-muted ps-3 mb-0">
+                  <li><strong>LogiSync:</strong> Gestión logística.</li>
+                  <li><strong>ATM:</strong> Simulador con QR.(en proceso)</li>
+                  <li><strong>Dumbo:</strong> Inventario restaurante.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12" id="metas">
+              <div class="bento-card" style="background-color: #2b2b2b; color: white">
+                <h3 class="h5 mb-3 text-light">🎯 Metas 2026</h3>
+                <p class="small mb-0 opacity-75">
+                  ➤ Aprender mas el ingles y superar mi racha +970 días en Duolingo
+                </p>
+                <p class="small mb-0 opacity-75">
+                  ➤ Aprender Ciberseguridad e IA si es posible
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12" id="playlist">
+              <div class="bento-card video-stack">
+                <h3 class="h5 mb-4">🎧 Mi Playlist Actual</h3>
+                <iframe src="https://www.youtube.com/embed/S1UMlrL4Rks"></iframe>
+                <iframe src="https://www.youtube.com/embed/iI1ux-JSufI"></iframe>
+                <iframe src="https://www.youtube.com/embed/SFv7PHalUbk"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="row g-4 h-100">
+            
+            <div class="col-12" id="hobbies">
+              <div class="bento-card">
+                <h3 class="h5 mb-4">🎸 Fuera del código</h3>
+
+                <div class="row align-items-center mb-4">
+                  <div class="col-7 small">
+                    <strong>Música y Libros:</strong> Tocar guitarra y leer
+                    historias que inspiran.
+                  </div>
+                  <div class="col-5">
+                    <img src="guit.jpg" class="hobby-img" />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="small mb-2">
+                    <strong>Juegos favoritos:</strong> Dead By Daylight, Left 4
+                    Dead y R.E.P.O.
+                  </div>
+                  <div class="row g-2">
+                    <div class="col-4">
+                      <img src="dbd.avif" class="hobby-img" />
+                    </div>
+                    <div class="col-4">
+                      <img src="left.jpg" class="hobby-img" />
+                    </div>
+                    <div class="col-4">
+                      <img src="repo.jpg" class="hobby-img" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row align-items-center mb-4">
+                  <div class="col-7 small">
+                    <strong>Los Gatos:</strong> Adoro a los felinos, comparto mi
+                    espacio con un compañero gatuno.
+                  </div>
+                  <div class="col-5">
+                    <img src="gato5.jfif" class="hobby-img" />
+                  </div>
+                </div>
+
+                <div class="row align-items-center mb-4">
+                  <div class="col-7 small">
+                    <strong>Cine:</strong> Fan de la ciencia ficción, las
+                    comedias y el romance.
+                  </div>
+                  <div class="col-5">
+                    <img src="pd.jpg" class="hobby-img" />
+                  </div>
+                </div>
+
+                <hr />
+                <h3 class="h5 mb-3">🏃‍♂️ Deportes</h3>
+                <div class="mb-3">
+                  <h6 class="mb-1 fw-bold small">Futbol y Baloncesto</h6>
+                  <p class="text-muted small">Con amigos</p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="mb-1 fw-bold small">Atletismo</h6>
+                  <p class="text-muted small">Me gusta correr en maratones</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12" id="contacto">
+              <div class="bento-card">
+                <h3 class="h5 mb-3">📱 Contacto</h3>
+                <div class="d-flex flex-column gap-2 small">
+                  <a href="https://www.facebook.com/share/17Q3obbkhK/" class="contact-link">📘 Facebook</a>
+                  <a href="https://www.instagram.com/therengelan" class="contact-link">📸 Instagram</a>
+                  <a href="https://www.tiktok.com/@there0_0a" class="contact-link">🎵 TikTok</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
